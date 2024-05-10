@@ -27,9 +27,9 @@ export default function page() {
         title: "Login Successful",
         description: "Redirecting you to your dashboard.",
       });
-      router.push("/profile");
+      router.push("/");
       const response = await axios.get("/api/users/me");
-      console.log(response.data.data.isVerified);
+      // console.log(response.data.data.isVerified);
       endUser.setUser({
         ...endUser.user,
         username: response.data.data.username,
