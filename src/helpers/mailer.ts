@@ -29,12 +29,12 @@ export const sendEmail = async ({
       });
     }
     const transporter = nodemailer.createTransport({
-      host: "sandbox.smtp.mailtrap.io",
-      port: 2525,
+      host: "live.smtp.mailtrap.io",
+      port: 587,
       auth: {
-        user: "79258aca71c3d8",
-        pass: "0b844c78cb3403",
-      },
+        user: "api",
+        pass: "0848f3b94a57ac618f7409c240789287"
+      }
     });
     const mailOptions = {
       from: "", // sender address
